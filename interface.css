@@ -7,14 +7,14 @@ body{
   
   /* Welcome Page */
   .welcome_Slide_Up{
-    height: 1500px;
+    height: 797px;
     width: auto;
     text-align: center;
     align-content: center;
     background-color: black;
     color: white;
     font-family: serif;
-    vertical-align: middle;
+    padding-top: 600px;
   }
 
   /* Nav Styles */
