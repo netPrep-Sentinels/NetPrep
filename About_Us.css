@@ -1,0 +1,17 @@
+.About_Us{
+    height: 200px;
+    width: 2500px;
+    background-color: burlywood;
+    align-content: center;
+    text-align: center;
+    font-size: 60px;
+    margin-top: -40%;
+}
+
+.Ashley{
+    height: 400px;
+    width: 2500px;
+    background-color: darkcyan;
+    align-content:flex-end;
+    font-size: 25px;
+}
