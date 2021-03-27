@@ -1,32 +1,102 @@
-
 .searchChat{
     background-color: gray;
-    height: 610px;
-    width: 500px;
+    height: 1225px;
+    width: 700px;
+    font-size: 40px;
+    text-align: center;
+    align-content: center;
+    line-height: 90px;
+}
 
+.students:hover{
+    background-color:blue;
 }
 
 .right{
-    height: auto;
+    height: 1200px;
     width: 75%;
+    margin-top: 0%;
     flex: right;
-    background-color: maroon;
+    background-color: rgb(185, 232, 247);
 }
 
 .typeChat{
     background-color:gray;
     height: 50px;
 }
+/*Search bar*/
+.search-bar input[type=text]{ 
+    width:650px; 
+    height: 43px; 
+    border-radius:25px;
+    border: none; 
+    font-family: sans-serif;
+    text-indent: 0.5pc;
+  } 
+      
+  .search-bar{ 
+    float: center;
+    padding-top: 1%;
+    margin: 10px; 
+  } 
+      
+  .search-bar button{
+    position:relative;
+    background-color: black; 
+    color: #f2f2f2; 
+    float: left; 
+    padding: 5px 10px; 
+    margin-right: 5px; 
+    font-size: 150px; 
+    border: none; 
+    cursor: pointer;
+  }
 
-.typeChat{
+  .student1:hover{
+    background-color: darkgray;
+  }
+
+ .typeChat{
     width: 275px;
+    background-color:black;
     height: auto;
   }
   
   .actualChat{
-    background-color: yellow;
-    width: auto;
-    height: 250px;
-    margin-left: 0%;
-    margin-top: 45%;
+    margin-top: -.5%;
+    background-color:teal;
+    width: 1850px;
+    height: 200px;
+    text-align: center;
+    align-content: center;
+    font-size: 40px;
+    font-style: italic;
+  }
+
+  /*Search bar*/
+.text-bar input[type=text]{ 
+    width:1800px; 
+    height: 43px; 
+    border-radius:25px;
+    border: none; 
+    font-family: sans-serif;
+    text-indent: 0.5pc;
+  } 
+      
+  .text-bar{ 
+    float: center;
+    padding-top: 50%;
+    margin: 10px; 
+  } 
+      
+  .text-bar button{
+    position:relative;
+    background-color: black; 
+    color: #f2f2f2; 
+    float: left; 
+    padding: 5px 10px; 
+    margin-right: 5px; 
+    font-size: 150px; 
+    border: none; 
+    cursor: pointer;
   }
