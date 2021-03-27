@@ -6,228 +6,71 @@
     <meta name="Description" content="Mar. 28, 2020 - Create an account or login and interact with college">
     <title>NetPrepUI</title>
     <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="chat.css">
     <link rel=”stylesheet” href=”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css”>
     <link rel="stylesheet" href="interface.js" type="text/Javascript">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
 </head>
 <body>
-  <div class = "nav1">
+
     <ul>
-        <li><a class="active" href="#home.html">Home</a></li>
+        
+        <li><a href="home.html">Home</a></li>
         <li><a href="classes.html">Classes</a></li>
-        <li><a href="chat.html">Chat</a></li>
+        <li><a class="active" href="chat.html" target = "">Chat</a></li>
         <li><a href="profile.html">Profile</a></li>
         <li><a href="interface.html">Logout</a></li>
-        <li><a href="home.html">netPrep</a></li>
+        <li><a href="About_Us.html">About Us</a></li>
     </ul>
-  </div>
 
-    <div class="wrapper">
-        <div class="card">
-          <div class="circle">
-            <div class="bar"></div>
-            <div class="box"><span></span></div>
-          </div>
-          <div class="text">Monday</div>
-        </div>
-        <div class="card js">
-          <div class="circle">
-            <div class="bar"></div>
-            <div class="box"><span></span></div>
-          </div>
-          <div class="text">Tuesday</div>
-        </div>
-        <div class="card react">
-          <div class="circle">
-            <div class="bar"></div>
-            <div class="box"><span></span></div>
-          </div>
-          <div class="text">Wednesday</div>
-        </div>
-        <div class="card react">
-            <div class="circle">
-              <div class="bar"></div>
-              <div class="box"><span></span></div>
-            </div>
-            <div class="text">Thursday</div>
-          </div>
-          <div class="card react">
-            <div class="circle">
-              <div class="bar"></div>
-              <div class="box"><span></span></div>
-            </div>
-            <div class="text">Friday</div>
-          </div>
-          <div class="card react">
-            <div class="circle">
-              <div class="bar"></div>
-              <div class="box"><span></span></div>
-            </div>
-            <div class="text">Weekend</div>
-          </div> 
-      </div>
+   <div class = "searchChat">
+    <div class="search-bar">
+        <input class="search-txt" type="text" name="" placeholder="Search">
+        <a class="search-btn" href="#"><i class="fas fa-search"></i></a>
+    </div>
 
-      <div class="container">
-        <div class="calendar">
-          <div class="front">
-            <div class="current-date">
-              <h1>Friday 15th</h1>
-              <h1>January 2016</h1> 
-            </div>
-  
-            <div class="current-month">
-              <ul class="week-days">
-                <li>MON</li>
-                <li>TUE</li>
-                <li>WED</li>
-                <li>THU</li>
-                <li>FRI</li>
-                <li>SAT</li>
-                <li>SUN</li>
-              </ul>
-  
-              <div class="weeks">
-                <div class="first">
-                  <span class="last-month">28</span>
-                  <span class="last-month">29</span>
-                  <span class="last-month">30</span>
-                  <span class="last-month">31</span>
-                  <span>01</span>
-                  <span>02</span>
-                  <span>03</span>
-                </div>
-  
-                <div class="second">
-                  <span>04</span>
-                  <span>05</span>
-                  <span class="event">06</span>
-                  <span>07</span>
-                  <span>08</span>
-                  <span>09</span>
-                  <span>10</span>
-                </div>
-  
-                <div class="third">
-                  <span>11</span>
-                  <span>12</span>
-                  <span>13</span>
-                  <span>14</span>
-                  <span class="active">15</span>
-                  <span>16</span>
-                  <span>17</span>
-                </div>
-  
-                <div class="fourth">
-                  <span>18</span>
-                  <span>19</span>
-                  <span>20</span>
-                  <span>21</span>
-                  <span>22</span>
-                  <span>23</span>
-                  <span>24</span>
-                </div>
-  
-                <div class="fifth">
-                  <span>25</span>
-                  <span>26</span>
-                  <span>27</span>
-                  <span>28</span>
-                  <span>29</span>
-                  <span>30</span>
-                  <span>31</span>
-                </div>
-              </div>
-            </div>
-          </div>
-  
-          <div class="back">
-            <input placeholder="What's the event?">
-            <div class="info">
-              <div class="date">
-                <p class="info-date">
-                Date: <span>Jan 15th, 2016</span>
-                </p>
-                <p class="info-time">
-                  Time: <span>6:35 PM</span>
-                </p>
-              </div>
-              <div class="address">
-                <p>
-                  Address: <span>129 W 81st St, New York, NY</span>
-                </p>
-              </div>
-              <div class="observations">
-                <p>
-                  Observations: <span>Be there 15 minutes earlier</span>
-                </p>
-              </div>
-            </div>
-  
-            <div class="actions">
-              <button class="save">
-                Save <i class="ion-checkmark"></i>
-              </button>
-              <button class="dismiss">
-                Dismiss <i class="ion-android-close"></i>
-              </button>
-            </div>
-          </div>
-  
-        </div>
-      </div>
-  
-      <script>
-        var app = {
-        settings: {
-        container: $('.calendar'),
-        calendar: $('.front'),
-        days: $('.weeks span'),
-        form: $('.back'),
-        input: $('.back input'),
-        buttons: $('.back button')
-      },
+        <div class = "student1">Miguel</div>
+        <div class = "student1">Ashley</div>
+        <div class = "student1">Myranda</div>
+        <div class = "student1">Guillermo</div>
+        <div class = "student1">Damian</div>
+        <div class = "student1">Daniel</div>
+        <div class = "student1">Jose</div>
+        <div class = "student1">Jesus</div>
+        <div class = "student1">Angel</div>
+        <div class = "student1">Victor</div>
+        <div class = "student1">Timothy</div>
+        <div class = "student1">Raul</div>
+    </div>
 
-      init: function() {
-        instance = this;
-        settings = this.settings;
-        this.bindUIActions();
-      },
+   
+   <div class = "right">
+   <div class = "typeChat"></div>
+   <div class = "actualChat">
+       <h1>GROUP: 12</h1>
+   </div>
+   <div class="text-bar">
+    <input class="search-txt" type="text" name="" placeholder="Type to text">
+    <a class="search-btn" href="#"><i class="fas fa-search"></i></a>
+</div>
+    </div>
 
-      swap: function(currentSide, desiredSide) {
-        settings.container.toggleClass('flip');
-
-        currentSide.fadeOut(900);
-        currentSide.hide();
-
-        desiredSide.show();
-      },
-
-      bindUIActions: function() {
-        settings.days.on('click', function(){
-        instance.swap(settings.calendar, settings.form);
-        settings.input.focus();
-      });
-
-      settings.buttons.on('click', function(){
-      instance.swap(settings.form, settings.calendar);
-    });
-  }
-}
-
-app.init();
-        let options = {
-          startAngle: -1.55,
-          size: 350,
-          value: 0.85,
-          fill: {gradient: ['#a445b2', '#fa4299']}
-        }
+      
+  
+    <script>
+       let options = {
+         startAngle: -1.55,
+         size: 350,
+         value: 0.85,
+         fill: {gradient: ['#a445b2', '#fa4299']}
+       }
         $(".circle .bar").circleProgress(options).on('circle-animation-progress',
         function(event, progress, stepValue){
           $(this).parent().find("span").text(String(stepValue.toFixed(2).substr(2)) + "%");
         });
         $(".js .bar").circleProgress({
-          value: 0.90
+          value: 0.70
         });
         $(".react .bar").circleProgress({
           value: 0.60
