@@ -1,0 +1,32 @@
+
+.searchChat{
+    background-color: gray;
+    height: 610px;
+    width: 500px;
+
+}
+
+.right{
+    height: auto;
+    width: 75%;
+    flex: right;
+    background-color: maroon;
+}
+
+.typeChat{
+    background-color:gray;
+    height: 50px;
+}
+
+.typeChat{
+    width: 275px;
+    height: auto;
+  }
+  
+  .actualChat{
+    background-color: yellow;
+    width: auto;
+    height: 250px;
+    margin-left: 0%;
+    margin-top: 45%;
+  }

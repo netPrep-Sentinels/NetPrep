@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Mar. 28, 2020 - Create an account or login and interact with college">
+    <title>NetPrepUI</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="chat.css">
+    <link rel=”stylesheet” href=”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css”>
+    <link rel="stylesheet" href="interface.js" type="text/Javascript">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+</head>
+<body>
+
+    <ul>
+        
+        <li><a href="home.html">Home</a></li>
+        <li><a href="classes.html">Classes</a></li>
+        <li><a class="active" href="chat.html" target = "">Chat</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="interface.html">Logout</a></li>
+        <li><a href="home.html">netPrep</a></li>
+    </ul>
+
+   <div class = "searchChat">
+        <div class = "box">
+            <p>Coooooooooooooooooooooooochie</p>
+        </div>
+   </div>
+
+   <div class = "right">
+   <div class = "typeChat">
+
+   </div>
+
+   <div class = "actualChat">
+
+   </div>
+    </div>
+
+      
+  
+    <script>
+       let options = {
+         startAngle: -1.55,
+         size: 350,
+         value: 0.85,
+         fill: {gradient: ['#a445b2', '#fa4299']}
+       }
+        $(".circle .bar").circleProgress(options).on('circle-animation-progress',
+        function(event, progress, stepValue){
+          $(this).parent().find("span").text(String(stepValue.toFixed(2).substr(2)) + "%");
+        });
+        $(".js .bar").circleProgress({
+          value: 0.70
+        });
+        $(".react .bar").circleProgress({
+          value: 0.60
+        });
+      </script>
+</body>
+</html>
