@@ -1,97 +1,110 @@
-*{
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #dfebed;
+  }
+  
+  ul {
+    list-style-type: none;
     margin: 0;
     padding: 0;
-    background: #dfebed;
-    font-family: 'Roboto', sans-serif;
-    
+    overflow: hidden;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  li  {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 180px;
+    text-decoration: none;
+  }
+  
+  a:hover:not(.active) {
+    background-color: #42fadb;
+  }
+  
+  .right-side {
+    position: right absolute;
+  }
+  
+  .active {
+    background-color: #42fadb;
+    text-decoration-color: white;
+  }
+  
+  .topnav-right {
+    float: right;
     }
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+    text-align: center;
+  }
+  
+  .about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #42fadb;
+    color: black;
+  }
+  
+  .container {
+    padding: 0 16px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: #eb42fa;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: black;
+    background-color: ;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #42fadb;
+  }
+  
+  @media screen {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
 
-.About_Us{
-    height: 200px;
-    width: 150%;
-    background-color: burlywood;
-    align-content: center;
-    text-align: left;
-    font-size: 120px;
-    margin-top: -40%;
-    position: relative;
-    
-}
-
-/*Ashely bio*/
-.Ashley{
-    height: 400px;
-    width: 220%;
-    display: flex;
-    background-color: rgb(98, 143, 146);
-    font-size: 25px;
-    margin-top: -18%;
-    margin-left: -180%;
-    position: relative;
-}
-
-.Ashley-image img{
-    position: relative;
-    margin-top: -100%;
-    margin-left: -990%;
-    width: 430px;
-
-}
-
-.Guillermo{
-    height: 400px;
-    width: 150%;
-    display: flex;
-    background-color: #DFEBED;
-    align-content:flex-end;
-    font-size: 25px;
-    margin-top: 13%;
-    margin-left: -195%;
-    position: relative;
-}
-
-.Guillermo-image img{
-    position: relative;
-    margin-top: 55%;
-    margin-left: -212%;
-    width: 730px;
-
-}
-
-.Jose{
-    height: 400px;
-    width: 150%;
-    background-color: rgb(98, 143, 146);
-    align-content:flex-end;
-    font-size: 25px;
-    margin-top: 45%;
-    margin-left: -190%;
-    position: relative;
-}
-
-.Victor{
-    height: 400px;
-    width: 3005px;
-    background-color: #DFEBED;
-    align-content:flex-end;
-    font-size: 25px;
-    margin-top: 77%;
-    margin-left: -122%;
-    position: relative;
-}
-
-/*
-.text2{
-
-}*/
-
-.Mission{
-    height: 750px;
-    width: 3010px;
-    background-color:  burlywood;
-    align-content:flex-end;
-    font-size: 25px;
-    margin-top: 120%;
-    margin-left: -120.3%;
-    position: relative;
-}
