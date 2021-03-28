@@ -1,17 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    background: #dfebed;
+    font-family: 'Roboto', sans-serif;
+    
+    }
+
 .About_Us{
     height: 200px;
-    width: 2500px;
+    width: 150%;
     background-color: burlywood;
     align-content: center;
-    text-align: center;
-    font-size: 60px;
+    text-align: left;
+    font-size: 120px;
     margin-top: -40%;
+    position: relative;
+    
 }
 
+/*Ashely bio*/
 .Ashley{
     height: 400px;
-    width: 2500px;
-    background-color: darkcyan;
+    width: 220%;
+    display: flex;
+    background-color: rgb(98, 143, 146);
+    font-size: 25px;
+    margin-top: -18%;
+    margin-left: -180%;
+    position: relative;
+}
+
+.Ashley-image img{
+    position: relative;
+    margin-top: -100%;
+    margin-left: -990%;
+    width: 430px;
+
+}
+
+.Guillermo{
+    height: 400px;
+    width: 150%;
+    display: flex;
+    background-color: #DFEBED;
     align-content:flex-end;
     font-size: 25px;
+    margin-top: 13%;
+    margin-left: -195%;
+    position: relative;
+}
+
+.Guillermo-image img{
+    position: relative;
+    margin-top: 55%;
+    margin-left: -212%;
+    width: 730px;
+
+}
+
+.Jose{
+    height: 400px;
+    width: 150%;
+    background-color: rgb(98, 143, 146);
+    align-content:flex-end;
+    font-size: 25px;
+    margin-top: 45%;
+    margin-left: -190%;
+    position: relative;
+}
+
+.Victor{
+    height: 400px;
+    width: 3005px;
+    background-color: #DFEBED;
+    align-content:flex-end;
+    font-size: 25px;
+    margin-top: 77%;
+    margin-left: -122%;
+    position: relative;
+}
+
+/*
+.text2{
+
+}*/
+
+.Mission{
+    height: 750px;
+    width: 3010px;
+    background-color:  burlywood;
+    align-content:flex-end;
+    font-size: 25px;
+    margin-top: 120%;
+    margin-left: -120.3%;
+    position: relative;
 }
