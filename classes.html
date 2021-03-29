@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Mar. 28, 2020 - Create an account or login and interact with college">
+    <title>NetPrepUI</title>
+    <link rel="stylesheet" href="classes.css">
+    <link rel=”stylesheet” href=”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css”>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+</head>
+<body>
+
+    <ul>   
+        <li><a href="home.html">Home</a></li>
+        <li><a class="active" href="classes.html">Classes</a></li>
+        <li><a href="chat.html" target = "">Chat</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="interface.html">Logout</a></li>
+        <li><a href="About_Us.html">About Us</a></li>
+    </ul>
+
+   <header class = "head"><h1>Progress</h1></header>
+
+    <div class="wrapper">
+        <div class="card">
+        <div class="circle"><a href = "https://www.gradescope.com/login">
+        <div class="bar"></div>
+          <div class="box"><span></span></div>
+        </div></a>
+        <div class="text">PS2(problem solving 2)</div>
+      </div>
+      <div class="card js">
+        <div class="circle"><a href = "https://cuchd.blackboard.com/">
+          <div class="bar"></div>
+          <div class="box"><span></span></div>
+        </div></a>
+        <div class="text">MATH3323(matrix algebra)</div>
+      </div>
+      <div class="card react">
+        <div class="circle"><a href = "https://webassign.com/">
+          <div class="bar"></div>
+          <div class="box"><span></span></div>
+        </div></a>
+        <div class="text">STAT 3320</div>
+      </div>
+      <div class="card react">
+        <div class="circle">
+          <div class="bar"></div>
+          <div class="box"><span></span></div>
+        </div>
+        <div class="text">MATH3325(principles of mathematics)</div>
+      </div>
+      <div class="card react">
+        <div class="circle">
+          <div class="bar"></div>
+          <div class="box"><span></span></div>
+        </div>
+        <div class="text">MECH 2311(thermal dynamics)</div>
+      </div>
+      <div class="card react">
+        <div class="circle">
+          <div class="bar"></div>
+          <div class="box"><span></span></div>
+        </div>
+        <div class="text">PHYS2301(physics 1)</div>
+      </div>
+      <div class="card react">
+        <div class="circle">
+          <div class="bar"></div>
+          <div class="box"><span></span></div>
+        </div>
+        <div class="text">CHEM1301 (chem 1)</div>
+      </div>
+      <div class="card react">
+        <div class="circle">
+          <div class="bar"></div>
+          <div class="box"><span></span></div>
+        </div>
+        <div class="text">CHEM1302 (chem 2)</div>
+      </div>
+      <div class="card react">
+        <div class="circle">
+          <div class="bar"></div>
+          <div class="box"><span></span></div>
+        </div>
+        <div class="text">CS2401 (data structures)</div>
+      </div>
+      <div class="card react">
+        <div class="circle">
+          <div class="bar"></div>
+          <div class="box"><span></span></div>
+        </div>
+        <div class="text">CS2301</div>
+      </div>
+      <div class="card react">
+        <div class="circle">
+          <div class="bar"></div>
+          <div class="box"><span></span></div>
+        </div>
+        <div class="text">MATH 2300(Descrete Math)</div>
+      </div>
+      <div class="card">
+        <div class="circle">
+          <div class="box"><span>+</span></div>
+        </div>
+        <div class="text">Add Class</div>
+      </div>
+    </div>
+
+
+    <script>
+      
+          var app = {
+        settings: {
+        container: $('.calendar'),
+        calendar: $('.front'),
+        days: $('.weeks span'),
+        form: $('.back'),
+        input: $('.back input'),
+        buttons: $('.back button')
+      },
+
+      init: function() {
+        instance = this;
+        settings = this.settings;
+        this.bindUIActions();
+      },
+
+      swap: function(currentSide, desiredSide) {
+        settings.container.toggleClass('flip');
+
+        currentSide.fadeOut(900);
+        currentSide.hide();
+
+        desiredSide.show();
+      },
+
+      bindUIActions: function() {
+        settings.days.on('click', function(){
+        instance.swap(settings.calendar, settings.form);
+        settings.input.focus();
+      });
+
+      settings.buttons.on('click', function(){
+      instance.swap(settings.form, settings.calendar);
+      });
+      }
+}
+        let options = {
+          startAngle: -1.55,
+          size: 150,
+          value: 0.85,
+          fill: {gradient: ['#a445b2', '#fa4299']}
+        }
+        $(".circle .bar").circleProgress(options).on('circle-animation-progress',
+        function(event, progress, stepValue){
+          $(this).parent().find("span").text(String(stepValue.toFixed(2).substr(2)) + "%");
+        });
+        $(".js .bar").circleProgress({
+          value: 0.90
+        });
+        $(".react .bar").circleProgress({
+          value: 0.50
+        });
+    </script>
+</body>
